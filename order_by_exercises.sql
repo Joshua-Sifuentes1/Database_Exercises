@@ -1,6 +1,7 @@
 USE employees;
 
--- Modify your first query to order by first name. The first result should be Irena Majewski and the last result should be Vidya Schaft.
+-- Modify your first query to order by first name.
+-- The first result should be Irena Majewski and the last result should be Vidya Schaft.
 
 SELECT * 
 FROM employees
