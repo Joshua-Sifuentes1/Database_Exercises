@@ -10,6 +10,16 @@ WHERE (first_name = 'Irena'
 	AND gender = 'M'
 ORDER BY first_name;
 
+-- Update the query to order by first name and then last name. 
+-- The first result should now be Irena Acton and the last should be Vidya Zweizig.
+SELECT * 
+FROM employees
+WHERE (first_name = 'Irena'
+	OR first_name = 'Vidya'
+	OR first_name = 'Maya')
+	AND gender = 'M'
+ORDER BY first_name, last_name;
+
 -- Find all employees whose last name starts or ends with 'E' — 30,723 rows.
 
 SELECT * 
