@@ -8,7 +8,7 @@ FROM employees
 WHERE (first_name = 'Irena'
 	OR first_name = 'Vidya'
 	OR first_name = 'Maya')
-	AND gender = 'M'
+AND gender = 'M'
 ORDER BY first_name;
 
 -- Update the query to order by first name and then last name. 
@@ -19,7 +19,7 @@ FROM employees
 WHERE (first_name = 'Irena'
 	OR first_name = 'Vidya'
 	OR first_name = 'Maya')
-	AND gender = 'M'
+AND gender = 'M'
 ORDER BY first_name, last_name;
 
 -- Change the order by clause so that you order by last name before first name.
@@ -30,7 +30,7 @@ FROM employees
 WHERE (first_name = 'Irena'
 	OR first_name = 'Vidya'
 	OR first_name = 'Maya')
-	AND gender = 'M'
+AND gender = 'M'
 ORDER BY last_name, first_name;
 
 -- Update your queries for employees with 'E' in their last name to
@@ -39,7 +39,7 @@ ORDER BY last_name, first_name;
 SELECT * 
 FROM employees
 WHERE last_name LIKE 'e%'
-	ORDER BY emp_no;
+ORDER BY emp_no;
 
 -- Change the query for employees hired in the 90s and born on Christmas such that 
 -- the first result is the oldest employee who was hired last. It should be Khun Bernini.
