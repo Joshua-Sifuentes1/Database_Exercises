@@ -7,8 +7,10 @@ CREATE TABLE albums (
 	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 	artist VARCHAR(150) NOT NULL DEFAULT 'NONE',
 	name VARCHAR(150) NOT NULL DEFAULT 'NONE',
-	release_date YEAR,
+	release_date DATE,
 	sales DECIMAL(12, 2),
 	genre CHAR(255) NOT NULL DEFAULT 'UNKNOWN',
 	PRIMARY KEY (id)
 );
+
+-- migrations are files that control the stucture of the table
