@@ -4,7 +4,11 @@ USE employees;
 
 SELECT * 
 FROM employees
-WHERE first_name IN ('Irena', 'Vidya', 'Maya');
+WHERE first_name = 'Irena'
+OR (
+	first_name = 'Vidya'
+	OR first_name = 'Maya'
+);
 
 -- Employees whose last name starts with 'E' — 7,330 rows.
 
