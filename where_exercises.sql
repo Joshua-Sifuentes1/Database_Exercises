@@ -1,21 +1,14 @@
 USE employees;
 
--- Update your query for 'Irena', 'Vidya', or 'Maya' to use OR instead of IN — 709 rows.
-
-SELECT * 
-FROM employees
-WHERE first_name = 'Irena'
-	OR first_name = 'Vidya'
-	OR first_name = 'Maya';
-
--- Now add a condition to find everybody with those names who is also male — 441 rows.
+-- Modify your first query to order by first name. The first result should be Irena Majewski and the last result should be Vidya Schaft.
 
 SELECT * 
 FROM employees
 WHERE (first_name = 'Irena'
 	OR first_name = 'Vidya'
 	OR first_name = 'Maya')
-	AND gender = 'M';
+	AND gender = 'M'
+ORDER BY first_name;
 
 -- Find all employees whose last name starts or ends with 'E' — 30,723 rows.
 
